@@ -20,7 +20,7 @@ end
 
 
 def take_a_number(katz_deli, name)
-  position = 0
+  ticket = 1
   katz_deli << name
   for name in katz_deli
     position += 1
