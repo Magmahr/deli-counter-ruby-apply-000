@@ -18,14 +18,14 @@ def line(katz_deli)
  puts "The line is currently: #{deli}" 
 end  
 
+$ticket = 1
 
-def take_a_number(katz_deli, name)
-  ticket = 1
-  katz_deli << name
-  for name in katz_deli
-    position += 1
-  end
-  puts "Welcome, #{name}. You are number #{position} in line."
+def take_a_number(katz_deli)
+  katz_deli << $ticket
+  
+  $ticket += 1
+  #end
+  puts "Welcome. You are number #{position} in line."
 end  
 
 def now_serving(katz_deli)
